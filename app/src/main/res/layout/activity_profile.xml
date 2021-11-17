@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:weightSum="12"
+            >
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/notification_icon"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/setting_icon"
+                android:layout_weight="10"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/setting_icon"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+
+                />
+
+
+
+        </LinearLayout>
+<!--       name & phoneNumber-->
+        <LinearLayout
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حسام نعمتی"
+            android:fontFamily="@font/roya"
+            android:textSize="25dp"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09199595777"/>
+        </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:weightSum="4">
+                <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:layout_gravity="right"
+             android:layout_weight="2"
+             android:layout_marginTop="35dp"
+             android:gravity="right"
+             >
+
+             <ImageView
+                 android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:layout_gravity="center"
+                 android:src="@drawable/wallet_icon"/>
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="فعالسازی کیف پول"
+                 android:fontFamily="@font/roya"
+                 android:gravity="center"
+                 android:layout_gravity="center"
+                 android:textSize="25dp"
+                 />
+
+
+         </LinearLayout>
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="1dp"
+                    android:layout_height="80dp"
+                    android:background="@color/gray"/>
+
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="right"
+                    android:layout_weight="2"
+                    android:layout_marginTop="35dp"
+                    android:gravity="right"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/activate_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="فعالسازی دیجیکالا"
+                        android:fontFamily="@font/roya"
+                        android:layout_gravity="center"
+                        android:textSize="25dp"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/gray"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:weightSum="4">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="right"
+                    android:layout_weight="2"
+                    android:layout_marginTop="35dp"
+                    android:gravity="right"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/pay_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="دیجی پی"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/roya"
+                        android:textSize="25dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="right"
+                    android:layout_weight="2"
+                    android:layout_marginTop="35dp"
+                    android:gravity="right"
+                    >
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/club_icon"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="کلاب"
+                        android:fontFamily="@font/roya"
+                        android:layout_gravity="center"
+                        android:textSize="25dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/gray"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:text="سفارش های من"
+                android:fontFamily="@font/roya"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="15dp"
+                />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/profileRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="@font/roya"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="لیست ها"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/heart_icon"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="@font/roya"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="نقد و نظرات"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/comment_icon"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="@font/roya"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="آدرس ها"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/location_icon"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="@font/roya"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="کارت های هدیه"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/gift_card_icon"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="right"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="@font/roya"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="اطلاعات شخصی"
+                    />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/acount_icon"
+                    />
+
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/gray"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:text="پر تکرار "
+                android:fontFamily="@font/roya"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_marginRight="15dp"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+            </LinearLayout>
+
+
+
+

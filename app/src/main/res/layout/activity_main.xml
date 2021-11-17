@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/blue3"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DigiKala"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rerecycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_below="@id/rerecycler_view2"
+        android:layout_marginTop="35dp"
+        android:backgroundTint="@color/pink2"
+        android:background="@drawable/specialoffer" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rerecycler_view2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/search"
+        android:layout_marginTop="6dp"
+        android:background="@color/blue3"
+        />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/rerecycler_view"
+        android:layout_gravity="center_vertical"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Search"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/title_tv"
+        />
+
+    <Button
+        android:id="@+id/porf_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="پروفایل"
+        android:background="@color/blue3"
+        android:layout_alignParentBottom="true"
+        />
+
+
+</RelativeLayout>
