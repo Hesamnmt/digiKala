@@ -54,8 +54,8 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.VersionV
        if ((position==0)||(position==1)||(position==2)||(position==3)||(position==4)){
 
            holder.relativeLayout_myOrder.setOnClickListener(v -> {
-            //   Intent intent = new Intent(context, OrdersActivity.class);
-            //   context.startActivity(intent);
+               Intent intent = new Intent(context, OrderActivity.class);
+               context.startActivity(intent);
            });
        }
 
