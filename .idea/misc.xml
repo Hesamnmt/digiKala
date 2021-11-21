@@ -3,12 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.1703125" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.12864583333333332" />
         <entry key="app/src/main/res/layout/activity_order.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/activity_orders.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/delivered_fragment.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_orders_ativity.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/activity_orders_detail.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/cancel_fragment.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/delivered_base_fragment.xml" value="0.4588910133843212" />
+        <entry key="app/src/main/res/layout/delivered_fragment.xml" value="0.39987853923360106" />
         <entry key="app/src/main/res/layout/fragment_frag3.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_orders.xml" value="0.25" />
         <entry key="app/src/main/res/layout/processing_fragment.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/profile_base.xml" value="1.2532138142828997" />
+        <entry key="app/src/main/res/layout/return_fragment.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/shoe_item.xml" value="0.12864583333333332" />
         <entry key="app/src/main/res/layout/waiting_fragment.xml" value="0.3098958333333333" />
       </map>
     </option>

@@ -3,6 +3,7 @@ package ir.hesam.digikala;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,6 +15,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.tabs.TabLayout;
+
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -21,6 +24,8 @@ import java.util.ArrayList;
 
 public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.VersionViewHolder> {
     Context context;
+    TabLayout tabLayout ;
+
 
 
 
@@ -51,13 +56,67 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.VersionV
        holder.profile_obj_text.setText(profileMoudel.get(position).getProfile_obj_name());
        holder.profile_obj_picture.setImageResource(profileMoudel.get(position).profile_obj_photo);
 
-       if ((position==0)||(position==1)||(position==2)||(position==3)||(position==4)){
+
+
+            holder.relativeLayout_myOrder.setOnClickListener(v -> {
+                Intent intent = new Intent(context, OrderActivity.class);
+                intent.putExtra("current",position);
+
+                context.startActivity(intent);
+
+            });
+
+
+
+      /*  if (position==0){
+            holder.relativeLayout_myOrder.setOnClickListener(v -> {
+                Intent intent = new Intent(context, FragmentWaiting.class);
+                context.startActivity(intent);
+            });
+        }
+
+        else if (position==1){
+            holder.relativeLayout_myOrder.setOnClickListener(v -> {
+                Intent intent = new Intent(context, FragmentProcessing.class);
+                context.startActivity(intent);
+            });
+        }
+
+        else if (position==2){
+            holder.relativeLayout_myOrder.setOnClickListener(v -> {
+                Intent intent = new Intent(context, FragmentDelivered.class);
+                context.startActivity(intent);
+            });
+        }
+
+        else if (position==3){
+            holder.relativeLayout_myOrder.setOnClickListener(v -> {
+                Intent intent = new Intent(context, FragmentCancel.class);
+                context.startActivity(intent);
+            });
+        }
+
+        else if (position==4){
+            holder.relativeLayout_myOrder.setOnClickListener(v -> {
+                Intent intent = new Intent(context, FragmentReturn.class);
+                context.startActivity(intent);
+            });
+        }*/
+
+
+
+
+
+
+      /* if ((position==0)||(position==1)||(position==2)||(position==3)||(position==4)){
 
            holder.relativeLayout_myOrder.setOnClickListener(v -> {
                Intent intent = new Intent(context, OrderActivity.class);
                context.startActivity(intent);
            });
-       }
+       }*/
+
+
 
 
     }
@@ -76,6 +135,7 @@ public class ProfileAdapter extends RecyclerView.Adapter<ProfileAdapter.VersionV
             ImageView profile_obj_picture ;
             TextView profile_obj_text;
             RelativeLayout relativeLayout_myOrder;
+
 
 
         public VersionViewHolder(View itemView) {

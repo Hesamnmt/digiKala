@@ -12,7 +12,9 @@
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="Processing Fragment"/>
+        android:fontFamily="@font/roya"
+        android:textSize="25dp"
+        android:text=" هیج کالایی در حال پردازش وجود ندارد"/>
 
 
 </RelativeLayout>
