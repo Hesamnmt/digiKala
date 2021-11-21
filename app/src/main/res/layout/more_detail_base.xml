@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:weightSum="12"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/name_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:text="1234"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="کد سفارش"
+                android:gravity="center"
+                android:fontFamily="@font/roya"
+                android:layout_marginRight="15dp"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:weightSum="12"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/date_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:text="0000/00/00"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تاریخ ثبت سفارش"
+                android:gravity="center"
+                android:fontFamily="@font/roya"
+                android:layout_marginRight="15dp"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray"
+            android:layout_marginTop="15dp"/>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:weightSum="12"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/receiver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_gravity="left"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:text="علیرضا احمدی"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تحویل گیرنده"
+                android:gravity="center"
+                android:fontFamily="@font/roya"
+                android:layout_marginRight="15dp"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:weightSum="12"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/receiver_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_weight="1"
+                android:layout_marginLeft="15dp"
+                android:text="۰۹۱۲۳۴۵۶۷۸۹۱"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شماره تماس"
+                android:gravity="center"
+                android:fontFamily="@font/roya"
+                android:layout_marginRight="15dp"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:text="ارسال به"/>
+        <TextView
+            android:id="@+id/receiver_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="15dp"
+            android:text="Adresssssssssssssss"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

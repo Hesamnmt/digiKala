@@ -22,13 +22,18 @@ public class FragmentDelivered extends Fragment {
     RecyclerView recycler_detail;
     RelativeLayout rtl_detail;
 
-    ArrayList<detail> details = new ArrayList<>();
+   public static ArrayList<detail> details = new ArrayList<>();
 
     String name_detail;
+    String receiver_name;
+    String date_order;
+    String receiver_number;
+    String receiver_address;
     int photo1_detail;
     int photo2_detail;
     int photo3_detail;
     int price_detail;
+
 
 
     public FragmentDelivered(){
@@ -56,15 +61,15 @@ public class FragmentDelivered extends Fragment {
 
 
        //region AddItem
-        details.add(new detail("44444",R.drawable.sh1,R.drawable.sh2,R.drawable.sh3,"810"));
-        details.add(new detail("55555",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"1000"));
-        details.add(new detail("324567",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"1000"));
-        details.add(new detail("333",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"900"));
-        details.add(new detail("5679900",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"7800"));
-        details.add(new detail("1212134",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"870"));
-        details.add(new detail("cdcdvg3",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"10000"));
-        details.add(new detail("12135hkkll",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"100999"));
-        details.add(new detail("112343rddf0",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"780"));
+        details.add(new detail("44444",R.drawable.sh1,R.drawable.sh2,R.drawable.sh3,"810","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری" ));
+        details.add(new detail("55555",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"1000","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
+        details.add(new detail("324567",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"1000","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
+        details.add(new detail("333",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"900","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
+        details.add(new detail("5679900",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"7800","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
+        details.add(new detail("1212134",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"870","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
+        details.add(new detail("cdcdvg3",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"10000","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
+        details.add(new detail("12135hkkll",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"100999","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
+        details.add(new detail("112343rddf0",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"780","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
         //endregion
 
         //region layoutManager
