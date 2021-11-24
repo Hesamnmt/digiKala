@@ -62,14 +62,14 @@ public class FragmentDelivered extends Fragment {
 
        //region AddItem
         details.add(new detail("44444",R.drawable.sh1,R.drawable.sh2,R.drawable.sh3,"810","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری" ));
-        details.add(new detail("55555",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"1000","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
-        details.add(new detail("324567",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"1000","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
-        details.add(new detail("333",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"900","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
-        details.add(new detail("5679900",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"7800","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
-        details.add(new detail("1212134",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"870","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
-        details.add(new detail("cdcdvg3",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"10000","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
-        details.add(new detail("12135hkkll",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"100999","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
-        details.add(new detail("112343rddf0",R.drawable.back_icon,R.drawable.acount_icon,R.drawable.sh3,"780","حسام نعمتی" , "1399/5/12","09199595777","زنجان ، زنجان ، پارک علم و فناوری"));
+        details.add(new detail("55555",R.drawable.lebas1,R.drawable.lebas2,R.drawable.lebas10,"1000","حسام نعمتی" , "1399/5/13","09199595777","زنجان ، زنجان ، پارک علم و فناوری1"));
+        details.add(new detail("324567",R.drawable.lebas6,R.drawable.lebas7,R.drawable.lebas9,"1000","حسام نعمتی" , "1399/5/14","09199595777","زنجان ، زنجان ، پارک علم و فناوری2"));
+        details.add(new detail("333",R.drawable.lebas4,R.drawable.lebas11,R.drawable.lebas5,"900","حسام نعمتی" , "1399/5/15","09199595777","زنجان ، زنجان ، پارک علم و فناوری3"));
+        details.add(new detail("5679900",R.drawable.lebas8,R.drawable.lebas12,R.drawable.lebas1,"7800","حسام نعمتی" , "1399/5/16","09199595777","زنجان ، زنجان ، پارک علم و فناوری4"));
+        details.add(new detail("1212134",R.drawable.lebas6,R.drawable.sh2,R.drawable.lebas3,"870","حسام نعمتی" , "1399/5/17","09199595777","زنجان ، زنجان ، پارک علم و فناوری5"));
+        details.add(new detail("cdcdvg3",R.drawable.lebas2,R.drawable.lebas9,R.drawable.lebas12,"10000","حسام نعمتی" , "1399/5/17","09199595777","زنجان ، زنجان ، پارک علم و فناوری6"));
+        details.add(new detail("12135hkkll",R.drawable.lebas10,R.drawable.lebas8,R.drawable.lebas5,"100999","حسام نعمتی" , "1399/5/18","09199595777","زنجان ، زنجان ، پارک علم و فناوری7"));
+        details.add(new detail("112343rddf0",R.drawable.sh1,R.drawable.lebas4,R.drawable.sh3,"780","حسام نعمتی" , "1399/5/19","09199595777","زنجان ، زنجان ، پارک علم و فناوری8"));
         //endregion
 
         //region layoutManager

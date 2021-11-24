@@ -1,5 +1,6 @@
 package ir.hesam.digikala;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -61,7 +62,7 @@ public class ItemAdapterDetail extends RecyclerView.Adapter<ItemAdapterDetail.Ve
 
 
     @Override
-    public void onBindViewHolder(final ItemAdapterDetail.VersionViewHolder holder, final int position) {
+    public void onBindViewHolder(final ItemAdapterDetail.VersionViewHolder holder, @SuppressLint("RecyclerView") final int position) {
 
         //position -> current item
       //  holder.photo1_detail.setImageResource(versionModels.get(position).photo);
@@ -70,6 +71,7 @@ public class ItemAdapterDetail extends RecyclerView.Adapter<ItemAdapterDetail.Ve
         holder.photo3_detail.setImageResource(versionModels.get(position).photo3_detail);
         holder.name_detail.setText(versionModels.get(position).name_detail);
         holder.price_detail.setText(versionModels.get(position).price_detail);
+        holder.date_order.setText(versionModels.get(position).date_order);
 
 
 
@@ -80,10 +82,14 @@ public class ItemAdapterDetail extends RecyclerView.Adapter<ItemAdapterDetail.Ve
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(context,DetailActivity.class);
-                    intent.putExtra("some","someData");
+                    intent.putExtra("name_detail",versionModels.get(position).name_detail);
+                    intent.putExtra("receiver_name",versionModels.get(position).receiver_name);
+                    intent.putExtra("receiver_address",versionModels.get(position).receiver_address);
+                    intent.putExtra("receiver_number",versionModels.get(position).receiver_number);
+                    intent.putExtra("date_order",versionModels.get(position).date_order);
                     context.startActivity(intent);
                 }
-            } );
+            });
 
 
 //            intent = new Intent(context, DetailActivity.class);
@@ -111,6 +117,7 @@ public class ItemAdapterDetail extends RecyclerView.Adapter<ItemAdapterDetail.Ve
         TextView name_detail;
         TextView price_detail;
         RelativeLayout rtl_detail;
+        TextView date_order;
 
         public VersionViewHolder(View itemView) {
             super(itemView);
@@ -120,7 +127,7 @@ public class ItemAdapterDetail extends RecyclerView.Adapter<ItemAdapterDetail.Ve
             name_detail = itemView.findViewById(R.id.name_detail);
             price_detail = itemView.findViewById(R.id.price_detail);
             rtl_detail = itemView.findViewById(R.id.rtl_detail);
-
+            date_order = itemView.findViewById(R.id.date_order);
         }
 
     }

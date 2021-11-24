@@ -10,10 +10,14 @@
     <color name="gray">#e9ecef</color>
     <color name="white">#FFFFFFFF</color>
     <color name="pink">#f72585</color>
+    <color name="blue_back">#90caf9</color>
+    <color name="blue_font">#0d47a1</color>
     <color name="pink2">#ffacc5</color>
     <color name="orange">#f86624</color>
     <color name="green_mad">#52b788</color>
     <color name="green_mad2">#74c69d</color>
+    <color name="green_back">#d8f3dc</color>
+    <color name="green_font">#2d6a4f</color>
     <color name="yello_btn">#d9ed92</color>
     <color name="red">#d62828</color>
     <color name="red1">#a4133c</color>
