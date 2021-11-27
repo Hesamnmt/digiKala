@@ -22,4 +22,15 @@
         app:font="@font/digital"
         />
 
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        android:font="@font/dana"
+        app:fontStyle="normal"
+        app:fontWeight="400"
+        app:font="@font/dana"
+        />
+
+
+
 </font-family>

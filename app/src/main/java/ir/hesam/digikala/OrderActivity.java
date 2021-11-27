@@ -1,12 +1,14 @@
 package ir.hesam.digikala;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
@@ -21,6 +23,9 @@ public class OrderActivity extends AppCompatActivity {
     ImageView back_icon;
     int fragmentId;
     LinearLayout sell_object;
+    Toolbar toolbar;
+    ImageView icon_toolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,11 +36,28 @@ public class OrderActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.view_pager);
         fragmentId = getIntent().getIntExtra("FRAGMENT_ID", 0);
 
-        //region BackButton
-        back_icon = findViewById(R.id.back_icon);
-        back_icon.setOnClickListener(v -> {
-            onBackPressed();
+
+        //region toolbar
+        toolbar = findViewById(R.id.toolbar);
+        icon_toolbar = findViewById(R.id.icon_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setTitle(" سفارش های من");
+        icon_toolbar.setImageResource(R.drawable.search_icon);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
         });
+        //endregion
+
+        //region BackButton
+//        back_icon = findViewById(R.id.back_icon);
+//        back_icon.setOnClickListener(v -> {
+//            onBackPressed();
+//        });
         //endregion
 
 

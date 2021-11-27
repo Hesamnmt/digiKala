@@ -17,11 +17,15 @@ import java.text.DecimalFormat;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+import ir.hamiss.internetcheckconnection.InternetAvailabilityChecker;
+import ir.hamiss.internetcheckconnection.InternetConnectivityListener;
+
+public class MainActivity extends AppCompatActivity implements InternetConnectivityListener {
 
     RecyclerView recyclerView;
     RecyclerView recyclerView_elanat;
     Button profile;
+    TextView connection_tv;
     ArrayList<MainMoudel> mainMoudels;
     ArrayList<MainElanat> MainElanat;
 
@@ -36,6 +40,15 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.rerecycler_view);
         recyclerView_elanat = findViewById(R.id.rerecycler_view2);
         profile = findViewById(R.id.porf_btn);
+        connection_tv = findViewById(R.id.connection_tv);
+
+
+        InternetAvailabilityChecker.init(this);
+
+
+        //connection
+        mInternetAvailabilityChecker = InternetAvailabilityChecker.getInstance();
+        mInternetAvailabilityChecker.addInternetConnectivityListener(this);
 
 
         //region items
@@ -123,5 +136,33 @@ public class MainActivity extends AppCompatActivity {
 
             });
 
+
+
+
+    }
+
+
+    private InternetAvailabilityChecker mInternetAvailabilityChecker;
+
+
+
+    @Override
+    public void onInternetConnectivityChanged(boolean isConnected) {
+        Log.e("state",String.valueOf(isConnected));
+        if (isConnected){
+            //internet is available
+            connection_tv.setText("connect!!");
+        }
+        else {
+            //internet is not available
+            connection_tv.setText("not Connect!!!");
+        }
+    }
+
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+        mInternetAvailabilityChecker.removeAllInternetConnectivityChangeListeners();
     }
 }
+

@@ -67,6 +67,16 @@
         android:background="@color/blue3"
         android:layout_alignParentBottom="true"
         />
+    <TextView
+        android:id="@+id/connection_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rerecycler_view"
+        android:layout_alignParentRight="true"
+        android:textSize="35dp"
+        android:layout_alignParentBottom="true"
+        android:text="connection"/>
+
 
 
 </RelativeLayout>
